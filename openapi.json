@@ -42,6 +42,18 @@
     },
     {
       "url": "https://ella.2miners.com/api"
+    },
+    {
+      "url": "https://btcp.2miners.com/api"
+    },
+    {
+      "url": "https://btcz.2miners.com/api"
+    },
+    {
+      "url": "https://clo.2miners.com/api"
+    },
+    {
+      "url": "https://yoc.2miners.com/api"
     }
   ],
   "info": {
