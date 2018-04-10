@@ -35,10 +35,10 @@
       "url": "https://pirl.2miners.com/api"
     },
     {
-      "url": "https://whl.2miners.com/api"
+      "url": "https://solo-whl.2miners.com/api"
     },
     {
-      "url": "https://dbix.2miners.com/api"
+      "url": "https://solo-dbix.2miners.com/api"
     },
     {
       "url": "https://ella.2miners.com/api"
