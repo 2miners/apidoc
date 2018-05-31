@@ -5,34 +5,67 @@
       "url": "https://btg.2miners.com/api"
     },
     {
+      "url": "https://solo-btg.2miners.com/api"
+    },
+    {
       "url": "https://zec.2miners.com/api"
+    },
+    {
+      "url": "https://solo-zec.2miners.com/api"
     },
     {
       "url": "https://zcl.2miners.com/api"
     },
     {
+      "url": "https://solo-zcl.2miners.com/api"
+    },
+    {
       "url": "https://zen.2miners.com/api"
+    },
+    {
+      "url": "https://solo-zen.2miners.com/api"
     },
     {
       "url": "https://hush.2miners.com/api"
     },
     {
+      "url": "https://solo-hush.2miners.com/api"
+    },
+    {
       "url": "https://eth.2miners.com/api"
+    },
+    {
+      "url": "https://solo-eth.2miners.com/api"
     },
     {
       "url": "https://etc.2miners.com/api"
     },
     {
+      "url": "https://solo-etc.2miners.com/api"
+    },
+    {
       "url": "https://exp.2miners.com/api"
+    },
+    {
+      "url": "https://solo-exp.2miners.com/api"
     },
     {
       "url": "https://music.2miners.com/api"
     },
     {
+      "url": "https://solo-music.2miners.com/api"
+    },
+    {
       "url": "https://etp.2miners.com/api"
     },
     {
+      "url": "https://solo-etp.2miners.com/api"
+    },
+    {
       "url": "https://pirl.2miners.com/api"
+    },
+    {
+      "url": "https://solo-pirl.2miners.com/api"
     },
     {
       "url": "https://solo-whl.2miners.com/api"
@@ -44,16 +77,31 @@
       "url": "https://ella.2miners.com/api"
     },
     {
+      "url": "https://solo-ella.2miners.com/api"
+    },
+    {
       "url": "https://btcp.2miners.com/api"
+    },
+    {
+      "url": "https://solo-btcp.2miners.com/api"
     },
     {
       "url": "https://btcz.2miners.com/api"
     },
     {
+      "url": "https://solo-btcz.2miners.com/api"
+    },
+    {
       "url": "https://clo.2miners.com/api"
     },
     {
+      "url": "https://solo-clo.2miners.com/api"
+    },
+    {
       "url": "https://yoc.2miners.com/api"
+    },
+    {
+      "url": "https://solo-yoc.2miners.com/api"
     }
   ],
   "info": {
