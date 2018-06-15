@@ -694,6 +694,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "numreward": {
+            "type": "integer",
+            "format": "int32"
+          },
           "name": {
             "type": "string"
           },
@@ -788,7 +792,11 @@
             "type": "integer",
             "format": "int32"
           },
-          "get24Hreward": {
+          "24hreward": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "24hnumreward": {
             "type": "integer",
             "format": "int64"
           }
