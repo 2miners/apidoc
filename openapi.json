@@ -283,78 +283,6 @@
         }
       }
     },
-    "/finders ": {
-      "get": {
-        "tags": [
-          "finders "
-        ],
-        "summary": "Get all Finders",
-        "description": "",
-        "operationId": "getStats",
-        "responses": {
-          "200": {
-            "description": "Returns a list of all the Finder",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/FinderReturnModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/FinderReturnModel"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Access denied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          }
-        }
-      }
-    },
     "/miners ": {
       "get": {
         "tags": [
@@ -610,32 +538,12 @@
           "name": "PaymentReturnModel"
         }
       },
-      "FinderReturnModel": {
-        "type": "object",
-        "properties": {
-          "findersBlock": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/FindersBlockModel"
-            }
-          }
-        },
-        "xml": {
-          "name": "FinderReturnModel"
-        }
-      },
       "StatsReturnModel": {
         "type": "object",
         "properties": {
           "candidatesTotal": {
             "type": "integer",
             "format": "int32"
-          },
-          "findersBlock": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/FindersBlockModel"
-            }
           },
           "hashrate": {
             "type": "number",
@@ -878,21 +786,6 @@
           }
         }
       },
-      "FindersBlockModel": {
-        "type": "object",
-        "properties": {
-          "finders": {
-            "type": "string"
-          },
-          "height": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "timestamp": {
-            "type": "string"
-          }
-        }
-      },
       "NodeModel": {
         "type": "object",
         "properties": {
@@ -951,10 +844,14 @@
           }
         }
       },
-      "MaturedModel": {
+      "CandidatesModel": {
         "type": "object",
         "properties": {
           "height": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "timestamp": {
             "type": "integer",
             "format": "int64"
           },
@@ -965,6 +862,103 @@
           "shares": {
             "type": "number",
             "format": "float"
+          },
+          "finder": {
+            "type": "string"
+          },
+          "uncle": {
+            "type": "boolean",
+            "default": false
+          },
+          "uncleHeight": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "orphan": {
+            "type": "boolean",
+            "default": false
+          },
+          "hash": {
+            "type": "string"
+          },
+          "reward": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "ImMaturedModel": {
+        "type": "object",
+        "properties": {
+          "height": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "timestamp": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "difficulty": {
+            "type": "number",
+            "format": "float"
+          },
+          "shares": {
+            "type": "number",
+            "format": "float"
+          },
+          "finder": {
+            "type": "string"
+          },
+          "uncle": {
+            "type": "boolean",
+            "default": false
+          },
+          "uncleHeight": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "orphan": {
+            "type": "boolean",
+            "default": false
+          },
+          "hash": {
+            "type": "string"
+          },
+          "reward": {
+            "type": "integer",
+            "format": "int64"
+          }
+        }
+      },
+      "MaturedModel": {
+        "type": "object",
+        "properties": {
+          "height": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "timestamp": {
+            "type": "integer",
+            "format": "int64"
+          },
+          "difficulty": {
+            "type": "number",
+            "format": "float"
+          },
+          "shares": {
+            "type": "number",
+            "format": "float"
+          },
+          "finder": {
+            "type": "string"
+          },
+          "uncle": {
+            "type": "boolean",
+            "default": false
+          },
+          "uncleHeight": {
+            "type": "integer",
+            "format": "int64"
           },
           "orphan": {
             "type": "boolean",
@@ -983,14 +977,20 @@
         "type": "object",
         "properties": {
           "candidates": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/CandidatesModel"
+            }
           },
           "candidatesTotal": {
             "type": "integer",
             "format": "int32"
           },
           "immature": {
-            "type": "string"
+            "type": "array",
+            "items": {
+              "$ref": "#/components/schemas/ImMaturedModel"
+            }
           },
           "immatureTotal": {
             "type": "integer",
