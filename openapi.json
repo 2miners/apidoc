@@ -102,6 +102,12 @@
     },
     {
       "url": "https://solo-yoc.2miners.com/api"
+    },
+    {
+      "url": "https://aka.2miners.com/api"
+    },
+    {
+      "url": "https://solo-aka.2miners.com/api"
     }
   ],
   "info": {
