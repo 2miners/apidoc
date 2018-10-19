@@ -1043,6 +1043,10 @@
           "y": {
             "type": "number",
             "format": "float"
+          },
+          "netdiff": {
+            "type": "number",
+            "format": "float"
           }
         }
       },
