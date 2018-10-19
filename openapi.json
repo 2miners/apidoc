@@ -138,8 +138,7 @@
             "description": "id of the wallet",
             "required": true,
             "schema": {
-              "type": "integer",
-              "format": "int64"
+              "type": "string"
             }
           }
         ],
