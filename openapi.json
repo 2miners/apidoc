@@ -130,7 +130,7 @@
   },
   "paths": {
     "/accounts/{walletid}": {
-      "put": {
+      "get": {
         "tags": [
           "accounts"
         ],
