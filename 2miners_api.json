@@ -114,6 +114,12 @@
     },
     {
       "url": "https://solo-anon.2miners.com/api"
+    },
+    {
+      "url": "https://moac.2miners.com/api"
+    },
+    {
+      "url": "https://solo-moac.2miners.com/api"
     }
   ],
   "info": {
