@@ -149,7 +149,9 @@
             "in": "path",
             "description": "id of the wallet",
             "required": true,
-            "type": "string"            
+            "schema": {
+              "type": "string"
+            }
           }
         ],
         "responses": {
@@ -1044,8 +1046,8 @@
         "type": "object",
         "properties": {
           "x": {
-            "type": "number",
-            "format": "float"
+            "type": "integer",
+            "format": "int64"
           },
           "timeFormat": {
             "type": "string"
