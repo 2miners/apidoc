@@ -633,16 +633,16 @@
             "type": "string"
           },
           "hr": {
-            "type": "integer",
-            "format": "int64"
+            "type": "number",
+            "format": "float"
           },
           "offline": {
             "type": "boolean",
             "default": false
           },
           "hr2": {
-            "type": "integer",
-            "format": "int64"
+            "type": "number",
+            "format": "float"
           }
         }
       },
