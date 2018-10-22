@@ -558,6 +558,10 @@
             "type": "integer",
             "format": "int32"
           },
+          "luck": {
+            "type": "number",
+            "format": "float"
+          },
           "maturedTotal": {
             "type": "integer",
             "format": "int32"
