@@ -122,10 +122,10 @@
       "url": "https://solo-moac.2miners.com/api"
     },
     {
-      "url": "https://monero.2miners.com/api"
+      "url": "https://xmr.2miners.com/api"
     },
     {
-      "url": "https://solo-monero.2miners.com/api"
+      "url": "https://solo-xmr.2miners.com/api"
     }
   ],
   "info": {
