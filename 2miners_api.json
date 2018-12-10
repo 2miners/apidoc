@@ -120,6 +120,12 @@
     },
     {
       "url": "https://solo-moac.2miners.com/api"
+    },
+    {
+      "url": "https://monero.2miners.com/api"
+    },
+    {
+      "url": "https://solo-monero.2miners.com/api"
     }
   ],
   "info": {
@@ -1057,6 +1063,10 @@
             "format": "float"
           },
           "netdiff": {
+            "type": "number",
+            "format": "float"
+          },
+          "nethr": {
             "type": "number",
             "format": "float"
           }
