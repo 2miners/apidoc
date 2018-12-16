@@ -126,6 +126,12 @@
     },
     {
       "url": "https://solo-xmr.2miners.com/api"
+    },
+    {
+      "url": "https://xzc.2miners.com/api"
+    },
+    {
+      "url": "https://solo-xzc.2miners.com/api"
     }
   ],
   "info": {
