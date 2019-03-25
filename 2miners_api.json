@@ -26,12 +26,6 @@
       "url": "https://solo-zen.2miners.com/api"
     },
     {
-      "url": "https://hush.2miners.com/api"
-    },
-    {
-      "url": "https://solo-hush.2miners.com/api"
-    },
-    {
       "url": "https://eth.2miners.com/api"
     },
     {
@@ -78,12 +72,6 @@
     },
     {
       "url": "https://solo-ella.2miners.com/api"
-    },
-    {
-      "url": "https://btcp.2miners.com/api"
-    },
-    {
-      "url": "https://solo-btcp.2miners.com/api"
     },
     {
       "url": "https://btcz.2miners.com/api"
