@@ -120,6 +120,12 @@
     },
     {
       "url": "https://solo-zel.2miners.com/api"
+    },
+    {
+      "url": "https://grin.2miners.com/api"
+    },
+    {
+      "url": "https://solo-grin.2miners.com/api"
     }
   ],
   "info": {
