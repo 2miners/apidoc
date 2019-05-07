@@ -825,8 +825,7 @@
             "type": "string"
           },
           "networkhashps": {
-            "type": "number",
-            "format": "float"
+            "type": "string"
           }
         }
       },
