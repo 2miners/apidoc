@@ -570,7 +570,8 @@
             }
           },
           "now": {
-            "type": "string"
+            "type": "integer",
+            "format": "int32"
           },
           "paymentsTotal": {
             "type": "integer",
@@ -583,9 +584,20 @@
             }
           },
           "stats": {
-            "type": "array",
-            "items": {
-              "$ref": "#/components/schemas/StartsModel"
+            "type": "object",
+            "properties": {
+              "lastBlockFound": {
+                "type": "integer",
+                "format": "int64"
+              },
+              "roundShares": {
+                "type": "number",
+                "format": "float"
+              },
+              "nshares": {
+                "type": "integer",
+                "format": "int64"
+              }
             }
           }
         },
@@ -641,12 +653,15 @@
         "type": "object",
         "properties": {
           "currentHashrate": {
-            "type": "integer",
-            "format": "int32"
+            "type": "number",
+            "format": "float"
+          },
+          "currentLuck": {
+            "type": "string"
           },
           "hashrate": {
-            "type": "integer",
-            "format": "int64"
+            "type": "number",
+            "format": "float"
           },
           "pageSize": {
             "type": "integer",
@@ -723,7 +738,8 @@
             "format": "int64"
           },
           "timestamp": {
-            "type": "string"
+            "type": "integer",
+            "format": "int64"
           },
           "tx": {
             "type": "string"
@@ -746,7 +762,8 @@
             "format": "int32"
           },
           "lastShare": {
-            "type": "string"
+            "type": "integer",
+            "format": "int32"
           },
           "paid": {
             "type": "integer",
@@ -773,7 +790,8 @@
             "format": "int32"
           },
           "now": {
-            "type": "string"
+            "type": "integer",
+            "format": "int32"
           }
         },
         "xml": {
@@ -791,13 +809,14 @@
       "NodeModel": {
         "type": "object",
         "properties": {
+          "avgBlockTime": {
+            "type": "string"
+          },
           "difficulty": {
-            "type": "number",
-            "format": "float"
+            "type": "string"
           },
           "height": {
-            "type": "integer",
-            "format": "int64"
+            "type": "string"
           },
           "lastBeat": {
             "type": "string"
@@ -827,7 +846,8 @@
             "format": "int64"
           },
           "timestamp": {
-            "type": "string"
+            "type": "integer",
+            "format": "int64"
           },
           "blockhash": {
             "type": "string"
@@ -841,6 +861,14 @@
             "format": "float"
           },
           "immature": {
+            "type": "boolean",
+            "default": false
+          },
+          "currentLuck": {
+            "type": "number",
+            "format": "float"
+          },
+          "uncle": {
             "type": "boolean",
             "default": false
           }
@@ -1016,23 +1044,6 @@
           "name": "BlockReturnModel"
         }
       },
-      "StartsModel": {
-        "type": "object",
-        "properties": {
-          "lastBlockFound": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "roundShares": {
-            "type": "number",
-            "format": "float"
-          },
-          "nshares": {
-            "type": "integer",
-            "format": "int64"
-          }
-        }
-      },
       "PoolChartsModel": {
         "type": "object",
         "properties": {
@@ -1082,7 +1093,8 @@
             "format": "int64"
           },
           "timestamp": {
-            "type": "string"
+            "type": "integer",
+            "format": "int64"
           },
           "totalPayees": {
             "type": "integer",
