@@ -44,12 +44,6 @@
       "url": "https://solo-exp.2miners.com/api"
     },
     {
-      "url": "https://music.2miners.com/api"
-    },
-    {
-      "url": "https://solo-music.2miners.com/api"
-    },
-    {
       "url": "https://etp.2miners.com/api"
     },
     {
@@ -75,12 +69,6 @@
     },
     {
       "url": "https://solo-clo.2miners.com/api"
-    },
-    {
-      "url": "https://aka.2miners.com/api"
-    },
-    {
-      "url": "https://solo-aka.2miners.com/api"
     },
     {
       "url": "https://moac.2miners.com/api"
@@ -111,6 +99,24 @@
     },
     {
       "url": "https://solo-grin.2miners.com/api"
+    },
+    {
+      "url": "https://rvn.2miners.com/api"
+    },
+    {
+      "url": "https://solo-rvn.2miners.com/api"
+    },
+    {
+      "url": "https://ae.2miners.com/api"
+    },
+    {
+      "url": "https://solo-ae.2miners.com/api"
+    },
+    {
+      "url": "https://beam.2miners.com/api"
+    },
+    {
+      "url": "https://solo-beam.2miners.com/api"
     }
   ],
   "info": {
