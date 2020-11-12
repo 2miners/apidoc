@@ -14,12 +14,6 @@
       "url": "https://solo-zec.2miners.com/api"
     },
     {
-      "url": "https://zcl.2miners.com/api"
-    },
-    {
-      "url": "https://solo-zcl.2miners.com/api"
-    },
-    {
       "url": "https://zen.2miners.com/api"
     },
     {
@@ -56,22 +50,10 @@
       "url": "https://solo-pirl.2miners.com/api"
     },
     {
-      "url": "https://btcz.2miners.com/api"
-    },
-    {
-      "url": "https://solo-btcz.2miners.com/api"
-    },
-    {
       "url": "https://clo.2miners.com/api"
     },
     {
       "url": "https://solo-clo.2miners.com/api"
-    },
-    {
-      "url": "https://moac.2miners.com/api"
-    },
-    {
-      "url": "https://solo-moac.2miners.com/api"
     },
     {
       "url": "https://xmr.2miners.com/api"
@@ -98,6 +80,12 @@
       "url": "https://solo-grin.2miners.com/api"
     },
     {
+      "url": "https://mwc.2miners.com/api"
+    },
+    {
+      "url": "https://solo-mwc.2miners.com/api"
+    },
+    {
       "url": "https://rvn.2miners.com/api"
     },
     {
@@ -114,6 +102,18 @@
     },
     {
       "url": "https://solo-beam.2miners.com/api"
+    },
+    {
+      "url": "https://ctxc.2miners.com/api"
+    },
+    {
+      "url": "https://solo-ctxc.2miners.com/api"
+    },
+    {
+      "url": "https://ckb.2miners.com/api"
+    },
+    {
+      "url": "https://solo-ckb.2miners.com/api"
     }
   ],
   "info": {
