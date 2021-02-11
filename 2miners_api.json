@@ -44,12 +44,6 @@
       "url": "https://solo-etp.2miners.com/api"
     },
     {
-      "url": "https://pirl.2miners.com/api"
-    },
-    {
-      "url": "https://solo-pirl.2miners.com/api"
-    },
-    {
       "url": "https://clo.2miners.com/api"
     },
     {
@@ -508,7 +502,7 @@
         "properties": {
           "code": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "message": {
             "type": "string"
@@ -532,7 +526,7 @@
           },
           "paymentsTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           }
         },
         "xml": {
@@ -544,7 +538,7 @@
         "properties": {
           "candidatesTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "hashrate": {
             "type": "number",
@@ -552,7 +546,7 @@
           },
           "immatureTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "luck": {
             "type": "number",
@@ -560,11 +554,11 @@
           },
           "maturedTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "minersTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "nodes": {
             "type": "array",
@@ -574,11 +568,11 @@
           },
           "now": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "paymentsTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "poolCharts": {
             "type": "array",
@@ -613,22 +607,22 @@
         "properties": {
           "inverval": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "reward": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "numreward": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "name": {
             "type": "string"
           },
           "offset": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           }
         }
       },
@@ -668,7 +662,7 @@
           },
           "pageSize": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "payments": {
             "type": "array",
@@ -678,7 +672,7 @@
           },
           "paymentsTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "rewards": {
             "type": "array",
@@ -688,7 +682,7 @@
           },
           "roundShares": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "shares": {
             "type": "array",
@@ -710,15 +704,15 @@
           },
           "workersOffline": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "workersOnline": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "workersTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "24hreward": {
             "type": "integer",
@@ -754,19 +748,19 @@
         "properties": {
           "balance": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "blocksFound": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "immature": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "lastShare": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "paid": {
             "type": "integer",
@@ -790,11 +784,11 @@
           },
           "minersTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "now": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           }
         },
         "xml": {
@@ -1016,7 +1010,7 @@
           },
           "candidatesTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "immature": {
             "type": "array",
@@ -1026,7 +1020,7 @@
           },
           "immatureTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "luck": {
             "$ref": "#/components/schemas/LuckModel"
@@ -1039,7 +1033,7 @@
           },
           "maturedTotal": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           }
         },
         "xml": {
@@ -1100,7 +1094,7 @@
           },
           "totalPayees": {
             "type": "integer",
-            "format": "int32"
+            "format": "int64"
           },
           "tx": {
             "type": "string"
