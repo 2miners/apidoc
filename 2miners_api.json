@@ -20,10 +20,10 @@
       "url": "https://solo-zen.2miners.com/api"
     },
     {
-      "url": "https://eth.2miners.com/api"
+      "url": "https://ethw.2miners.com/api"
     },
     {
-      "url": "https://solo-eth.2miners.com/api"
+      "url": "https://solo-ethw.2miners.com/api"
     },
     {
       "url": "https://etc.2miners.com/api"
@@ -32,16 +32,10 @@
       "url": "https://solo-etc.2miners.com/api"
     },
     {
-      "url": "https://exp.2miners.com/api"
+      "url": "https://erg.2miners.com/api"
     },
     {
-      "url": "https://solo-exp.2miners.com/api"
-    },
-    {
-      "url": "https://etp.2miners.com/api"
-    },
-    {
-      "url": "https://solo-etp.2miners.com/api"
+      "url": "https://solo-erg.2miners.com/api"
     },
     {
       "url": "https://clo.2miners.com/api"
@@ -56,28 +50,22 @@
       "url": "https://solo-xmr.2miners.com/api"
     },
     {
-      "url": "https://xzc.2miners.com/api"
+      "url": "https://firo.2miners.com/api"
     },
     {
-      "url": "https://solo-xzc.2miners.com/api"
+      "url": "https://solo-firo.2miners.com/api"
     },
     {
-      "url": "https://zel.2miners.com/api"
+      "url": "https://flux.2miners.com/api"
     },
     {
-      "url": "https://solo-zel.2miners.com/api"
+      "url": "https://solo-flux.2miners.com/api"
     },
     {
       "url": "https://grin.2miners.com/api"
     },
     {
       "url": "https://solo-grin.2miners.com/api"
-    },
-    {
-      "url": "https://mwc.2miners.com/api"
-    },
-    {
-      "url": "https://solo-mwc.2miners.com/api"
     },
     {
       "url": "https://rvn.2miners.com/api"
