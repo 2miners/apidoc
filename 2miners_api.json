@@ -2,24 +2,6 @@
   "openapi": "3.0.0",
   "servers": [
     {
-      "url": "https://btg.2miners.com/api"
-    },
-    {
-      "url": "https://solo-btg.2miners.com/api"
-    },
-    {
-      "url": "https://zec.2miners.com/api"
-    },
-    {
-      "url": "https://solo-zec.2miners.com/api"
-    },
-    {
-      "url": "https://zen.2miners.com/api"
-    },
-    {
-      "url": "https://solo-zen.2miners.com/api"
-    },
-    {
       "url": "https://ethw.2miners.com/api"
     },
     {
@@ -44,6 +26,30 @@
       "url": "https://solo-clo.2miners.com/api"
     },
     {
+      "url": "https://zec.2miners.com/api"
+    },
+    {
+      "url": "https://solo-zec.2miners.com/api"
+    },
+    {
+      "url": "https://zen.2miners.com/api"
+    },
+    {
+      "url": "https://solo-zen.2miners.com/api"
+    },
+    {
+      "url": "https://flux.2miners.com/api"
+    },
+    {
+      "url": "https://solo-flux.2miners.com/api"
+    },
+    {
+      "url": "https://btg.2miners.com/api"
+    },
+    {
+      "url": "https://solo-btg.2miners.com/api"
+    },
+    {
       "url": "https://xmr.2miners.com/api"
     },
     {
@@ -56,10 +62,16 @@
       "url": "https://solo-firo.2miners.com/api"
     },
     {
-      "url": "https://flux.2miners.com/api"
+      "url": "https://rvn.2miners.com/api"
     },
     {
-      "url": "https://solo-flux.2miners.com/api"
+      "url": "https://solo-rvn.2miners.com/api"
+    },
+    {
+      "url": "https://neox.2miners.com/api"
+    },
+    {
+      "url": "https://solo-neox.2miners.com/api"
     },
     {
       "url": "https://grin.2miners.com/api"
@@ -68,10 +80,10 @@
       "url": "https://solo-grin.2miners.com/api"
     },
     {
-      "url": "https://rvn.2miners.com/api"
+      "url": "https://ctxc.2miners.com/api"
     },
     {
-      "url": "https://solo-rvn.2miners.com/api"
+      "url": "https://solo-ctxc.2miners.com/api"
     },
     {
       "url": "https://ae.2miners.com/api"
@@ -84,12 +96,6 @@
     },
     {
       "url": "https://solo-beam.2miners.com/api"
-    },
-    {
-      "url": "https://ctxc.2miners.com/api"
-    },
-    {
-      "url": "https://solo-ctxc.2miners.com/api"
     },
     {
       "url": "https://ckb.2miners.com/api"
