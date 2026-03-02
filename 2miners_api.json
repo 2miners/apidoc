@@ -163,51 +163,6 @@
                 }
               }
             }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Access denied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
           }
         }
       }
@@ -232,51 +187,6 @@
               "application/xml": {
                 "schema": {
                   "$ref": "#/components/schemas/BlockReturnModel"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Access denied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
                 }
               }
             }
@@ -307,51 +217,6 @@
                 }
               }
             }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Access denied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
           }
         }
       }
@@ -376,51 +241,6 @@
               "application/xml": {
                 "schema": {
                   "$ref": "#/components/schemas/PaymentReturnModel"
-                }
-              }
-            }
-          },
-          "401": {
-            "description": "Unauthorized",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "403": {
-            "description": "Access denied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
-            }
-          },
-          "404": {
-            "description": "Not found",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
                 }
               }
             }
@@ -451,48 +271,116 @@
                 }
               }
             }
+          }
+        }
+      }
+    },
+    "/workers/{walletid}/{workerid}/{range}": {
+      "get": {
+        "tags": [
+          "workers"
+        ],
+        "summary": "Get Worker Stats by Range",
+        "description": "Returns hashrate data for a specific worker within a given time range. Available for apiVersion:200 coins (ETC, KAS, RVN, ZEC, ETHW, etc.).",
+        "operationId": "getWorkerRange",
+        "parameters": [
+          {
+            "name": "walletid",
+            "in": "path",
+            "description": "id of the wallet",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
           },
-          "401": {
-            "description": "Unauthorized",
+          {
+            "name": "workerid",
+            "in": "path",
+            "description": "id of the worker",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "range",
+            "in": "path",
+            "description": "time range for data",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "5m",
+                "30m",
+                "6h"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns worker hashrate data for the specified range",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
+                  "$ref": "#/components/schemas/WorkerRangeReturnModel"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
+                  "$ref": "#/components/schemas/WorkerRangeReturnModel"
                 }
               }
             }
-          },
-          "403": {
-            "description": "Access denied",
-            "content": {
-              "application/json": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              },
-              "application/xml": {
-                "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
-                }
-              }
+          }
+        }
+      }
+    },
+    "/accounts/{walletid}/shares/{range}": {
+      "get": {
+        "tags": [
+          "accounts"
+        ],
+        "summary": "Get Account Shares by Range",
+        "description": "Returns share statistics for an account within a given time range. Available for apiVersion:200 coins (ETC, KAS, RVN, ZEC, ETHW, etc.).",
+        "operationId": "getAccountSharesRange",
+        "parameters": [
+          {
+            "name": "walletid",
+            "in": "path",
+            "description": "id of the wallet",
+            "required": true,
+            "schema": {
+              "type": "string"
             }
           },
-          "404": {
-            "description": "Not found",
+          {
+            "name": "range",
+            "in": "path",
+            "description": "time range for data",
+            "required": true,
+            "schema": {
+              "type": "string",
+              "enum": [
+                "5m",
+                "30m",
+                "6h"
+              ]
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Returns share data for the specified range",
             "content": {
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
+                  "$ref": "#/components/schemas/SharesRangeReturnModel"
                 }
               },
               "application/xml": {
                 "schema": {
-                  "$ref": "#/components/schemas/ExceptionModel"
+                  "$ref": "#/components/schemas/SharesRangeReturnModel"
                 }
               }
             }
@@ -503,24 +391,6 @@
   },
   "components": {
     "schemas": {
-      "ExceptionModel": {
-        "type": "object",
-        "properties": {
-          "code": {
-            "type": "integer",
-            "format": "int64"
-          },
-          "message": {
-            "type": "string"
-          },
-          "description": {
-            "type": "string"
-          }
-        },
-        "xml": {
-          "name": "ExceptionModel"
-        }
-      },
       "PaymentReturnModel": {
         "type": "object",
         "properties": {
@@ -548,7 +418,26 @@
           },
           "hashrate": {
             "type": "number",
-            "format": "float"
+            "format": "float",
+            "description": "Pool hashrate (apiVersion:200 coins)"
+          },
+          "hashrates": {
+            "type": "object",
+            "description": "Pool hashrates by algorithm (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM). Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          "charts": {
+            "type": "object",
+            "description": "Pool charts by algorithm (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM). Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/PoolChartsModel"
+              }
+            }
           },
           "immatureTotal": {
             "type": "integer",
@@ -582,6 +471,7 @@
           },
           "poolCharts": {
             "type": "array",
+            "description": "Pool charts (apiVersion:200 coins)",
             "items": {
               "$ref": "#/components/schemas/PoolChartsModel"
             }
@@ -597,11 +487,21 @@
                 "type": "number",
                 "format": "float"
               },
-              "nshares": {
+              "nShares": {
                 "type": "integer",
                 "format": "int64"
+              },
+              "eu_sessions": {
+                "type": "integer",
+                "format": "int64",
+                "description": "Number of active EU sessions"
               }
             }
+          },
+          "workersTotal": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Total number of workers across all miners"
           }
         },
         "xml": {
@@ -657,14 +557,42 @@
         "properties": {
           "currentHashrate": {
             "type": "number",
-            "format": "float"
+            "format": "float",
+            "description": "Current hashrate (apiVersion:200 coins)"
+          },
+          "currentHashrates": {
+            "type": "object",
+            "description": "Current hashrates by algorithm (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM). Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "number",
+              "format": "float"
+            }
           },
           "currentLuck": {
             "type": "string"
           },
           "hashrate": {
             "type": "number",
-            "format": "float"
+            "format": "float",
+            "description": "Average hashrate (apiVersion:200 coins)"
+          },
+          "hashrates": {
+            "type": "object",
+            "description": "Average hashrates by algorithm (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM). Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          "charts": {
+            "type": "object",
+            "description": "Charts data by algorithm (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM). Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/AccountChartModel"
+              }
+            }
           },
           "pageSize": {
             "type": "integer",
@@ -746,6 +674,15 @@
           },
           "tx": {
             "type": "string"
+          },
+          "txFee": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Transaction fee"
+          },
+          "txKernelExcess": {
+            "type": "string",
+            "description": "Transaction kernel excess (coins like AE, GRIN, MWC, BEAM)"
           }
         }
       },
@@ -815,6 +752,10 @@
           "avgBlockTime": {
             "type": "string"
           },
+          "blockReward": {
+            "type": "string",
+            "description": "Block reward (present for AE and some other coins)"
+          },
           "difficulty": {
             "type": "string"
           },
@@ -824,11 +765,23 @@
           "lastBeat": {
             "type": "string"
           },
+          "minDiff": {
+            "type": "string",
+            "description": "Minimum difficulty (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM)"
+          },
           "name": {
             "type": "string"
           },
           "networkhashps": {
             "type": "string"
+          },
+          "primaryWeight31": {
+            "type": "string",
+            "description": "Primary weight for algorithm 31 (MWC)"
+          },
+          "primaryWeight32": {
+            "type": "string",
+            "description": "Primary weight for algorithm 32 (GRIN)"
           }
         }
       },
@@ -873,6 +826,11 @@
           "uncle": {
             "type": "boolean",
             "default": false
+          },
+          "orphan": {
+            "type": "boolean",
+            "default": false,
+            "description": "Whether the block is orphaned (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM)"
           }
         }
       },
@@ -1125,6 +1083,116 @@
           "orphanRate": {
             "type": "number",
             "format": "double"
+          }
+        }
+      },
+      "AccountChartModel": {
+        "type": "object",
+        "description": "Chart data point for account hashrate history (non-apiVersion:200 coins like AE, GRIN, MWC, BEAM)",
+        "properties": {
+          "minerHash": {
+            "type": "number",
+            "format": "float",
+            "description": "Miner hashrate"
+          },
+          "minerLargeHash": {
+            "type": "number",
+            "format": "float",
+            "description": "Miner large hashrate (average)"
+          },
+          "timeFormat": {
+            "type": "string",
+            "description": "Formatted time string"
+          },
+          "workerOnline": {
+            "type": "string",
+            "description": "Number of online workers"
+          },
+          "x": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Unix timestamp"
+          }
+        }
+      },
+      "WorkerRangeReturnModel": {
+        "type": "object",
+        "description": "Worker statistics for a specific time range (apiVersion:200 coins)",
+        "properties": {
+          "charts": {
+            "type": "object",
+            "description": "Worker charts by algorithm. Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "$ref": "#/components/schemas/AccountChartModel"
+              }
+            }
+          },
+          "currentHashrates": {
+            "type": "object",
+            "description": "Current worker hashrates by algorithm. Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "number",
+              "format": "float"
+            }
+          },
+          "hashrates": {
+            "type": "object",
+            "description": "Average worker hashrates by algorithm. Keys are algorithm numbers.",
+            "additionalProperties": {
+              "type": "number",
+              "format": "float"
+            }
+          }
+        },
+        "xml": {
+          "name": "WorkerRangeReturnModel"
+        }
+      },
+      "SharesRangeReturnModel": {
+        "type": "object",
+        "description": "Share statistics for an account within a given time range (apiVersion:200 coins)",
+        "properties": {
+          "shares": {
+            "type": "array",
+            "description": "Array of share data points",
+            "items": {
+              "$ref": "#/components/schemas/ShareDataModel"
+            }
+          }
+        },
+        "xml": {
+          "name": "SharesRangeReturnModel"
+        }
+      },
+      "ShareDataModel": {
+        "type": "object",
+        "description": "Individual share data point",
+        "properties": {
+          "valid": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Number of valid shares"
+          },
+          "stale": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Number of stale shares"
+          },
+          "invalid": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Number of invalid shares"
+          },
+          "x": {
+            "type": "integer",
+            "format": "int64",
+            "description": "Unix timestamp"
+          },
+          "timeFormat": {
+            "type": "string",
+            "description": "Formatted time string"
           }
         }
       }
