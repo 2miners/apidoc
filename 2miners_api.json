@@ -14,16 +14,22 @@
       "url": "https://solo-etc.2miners.com/api"
     },
     {
+      "url": "https://kas.2miners.com/api"
+    },
+    {
+      "url": "https://solo-kas.2miners.com/api"
+    },
+    {
       "url": "https://erg.2miners.com/api"
     },
     {
       "url": "https://solo-erg.2miners.com/api"
     },
     {
-      "url": "https://clo.2miners.com/api"
+      "url": "https://nexs.2miners.com/api"
     },
     {
-      "url": "https://solo-clo.2miners.com/api"
+      "url": "https://solo-nexa.2miners.com/api"
     },
     {
       "url": "https://zec.2miners.com/api"
@@ -32,34 +38,16 @@
       "url": "https://solo-zec.2miners.com/api"
     },
     {
-      "url": "https://zen.2miners.com/api"
-    },
-    {
-      "url": "https://solo-zen.2miners.com/api"
-    },
-    {
-      "url": "https://flux.2miners.com/api"
-    },
-    {
-      "url": "https://solo-flux.2miners.com/api"
-    },
-    {
       "url": "https://btg.2miners.com/api"
     },
     {
       "url": "https://solo-btg.2miners.com/api"
     },
     {
-      "url": "https://xmr.2miners.com/api"
+      "url": "https://zeph.2miners.com/api"
     },
     {
-      "url": "https://solo-xmr.2miners.com/api"
-    },
-    {
-      "url": "https://firo.2miners.com/api"
-    },
-    {
-      "url": "https://solo-firo.2miners.com/api"
+      "url": "https://solo-zeph.2miners.com/api"
     },
     {
       "url": "https://rvn.2miners.com/api"
@@ -74,10 +62,22 @@
       "url": "https://solo-neox.2miners.com/api"
     },
     {
+      "url": "https://xna.2miners.com/api"
+    },
+    {
+      "url": "https://solo-xna.2miners.com/api"
+    },
+    {
       "url": "https://grin.2miners.com/api"
     },
     {
       "url": "https://solo-grin.2miners.com/api"
+    },
+    {
+      "url": "https://mwc.2miners.com/api"
+    },
+    {
+      "url": "https://solo-mwc.2miners.com/api"
     },
     {
       "url": "https://ctxc.2miners.com/api"
@@ -102,6 +102,18 @@
     },
     {
       "url": "https://solo-ckb.2miners.com/api"
+    },
+    {
+      "url": "https://bch.2miners.com/api"
+    },
+    {
+      "url": "https://solo-bch.2miners.com/api"
+    },
+    {
+      "url": "https://quaisha.2miners.com/api"
+    },
+    {
+      "url": "https://solo-quaisha.2miners.com/api"
     }
   ],
   "info": {
@@ -197,7 +209,7 @@
               }
             }
           }
-        }        
+        }
       }
     },
     "/blocks": {
