@@ -11,7 +11,7 @@ Every pool has its own host:
 - PPLNS: `https://<pool>.2miners.com/api`
 - SOLO: `https://solo-<pool>.2miners.com/api`
 
-Pools: `ae`, `bch`, `beam`, `ckb`, `erg`, `etc`, `ethw`, `grin`, `kas`, `mwc`, `nexa`, `prl`, `qtc`, `quaikawpow`, `quaisha`, `rvn`, `xna`, `zec`, `zeph` (PPLNS and SOLO each), and `solo-btc`.
+Pools: `ae`, `bch`, `beam`, `ckb`, `erg`, `etc`, `ethw`, `grin`, `kas`, `mwc`, `neb`, `nexa`, `prl`, `qtc`, `quaikawpow`, `quaisha`, `rvn`, `xna`, `zec`, `zeph` (PPLNS and SOLO each), and `solo-btc`.
 
 ## Endpoints
 
